@@ -32,7 +32,8 @@ jobs:
 
       - name: Upload Artifact
         if: env.FOUND_VST3 == 'true'
-        uses: actions/abstract/upload-artifact@v4
+        uses: uses: actions/upload-artifact@v4
+
         with:
           name: PSY-ZUMBO-Windows-x64
           path: ${{ env.VST3_DIR }}
